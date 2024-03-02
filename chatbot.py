@@ -10,6 +10,8 @@ from sklearn.preprocessing import LabelEncoder as LE
 from sklearn.metrics.pairwise import cosine_similarity
 
 import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.corpus import stopwords
 import datetime
@@ -37,7 +39,7 @@ le = LE()
 
 tfv = TfidfVectorizer(min_df=1, stop_words='english')
 
-data = pd.read_csv("C:\\Users\\Rohit\\Desktop\\BankFAQs.csv")
+data = pd.read_csv("./BankFAQs.csv")
 
 questions = data['Question'].values
 

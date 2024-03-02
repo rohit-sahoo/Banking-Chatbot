@@ -1,2 +1,3 @@
-ChatterBot-0.8.4
-simple-websocket-server
+chatterbot==1.0.4
+scikit-learn
+SimpleWebSocketServer
