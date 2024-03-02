@@ -1,4 +1,3 @@
 chatterbot==1.0.4
-pandas
 scikit-learn
-simple-websocket-server
+SimpleWebSocketServer
